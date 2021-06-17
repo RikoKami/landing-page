@@ -4,10 +4,10 @@ import Heading from 'components/Heading'
 import Container from 'components/Container'
 
 import * as S from './styles'
-import { sectionTechProps } from 'types/api'
+import { SectionTechProps } from 'types/api'
 import { getImageUrl } from 'utils/getImageUrl'
 
-const SectionTech = ({ techIcons, title }: sectionTechProps) => {
+const SectionTech = ({ techIcons, title }: SectionTechProps) => {
   return (
     <S.Wrapper>
       <Container>

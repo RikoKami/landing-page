@@ -4,14 +4,14 @@ import Heading from 'components/Heading'
 import Container from 'components/Container'
 
 import * as S from './styles'
-import { sectionAboutProjectProps } from 'types/api'
+import { SectionAboutProjectProps } from 'types/api'
 import { getImageUrl } from 'utils/getImageUrl'
 
 const SectionAboutProject = ({
   title,
   description,
   media: { url, alternativeText }
-}: sectionAboutProjectProps) => (
+}: SectionAboutProjectProps) => (
   <S.Wrapper>
     <Container>
       <S.Container>
