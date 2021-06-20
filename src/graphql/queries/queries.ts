@@ -113,7 +113,6 @@ export const GET_LANDING_PAGE = gql`
         text
         photo {
           url
-          alternativeText
         }
       }
     }
