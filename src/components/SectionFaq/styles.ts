@@ -37,24 +37,23 @@ export const Question = styled.div`
   ${({ theme }) => css`
     a {
       color: ${theme.colors.primary};
-      text-decoration: none;
       border-bottom: 1px solid ${theme.colors.primary};
     }
-  `}
-`
 
-export const ExtraQuestion = styled.div`
-  ${({ theme }) => css`
-    margin-top: ${theme.spacings.medium};
+    &:last-child {
+      grid-column: 1;
+      margin-top: ${theme.spacings.medium};
 
-    a {
-      border-bottom: 1px solid ${theme.colors.secondary};
-      color: ${theme.colors.secondary};
-      text-decoration: none;
+      a {
+        border-bottom: 1px solid ${theme.colors.secondary};
+        color: ${theme.colors.secondary};
+        text-decoration: none;
+      }
+
+      ${media.greaterThan('medium')`
+        grid-column: span 2;
+        margin-top: ${theme.spacings.xlarge};
+      `}
     }
-
-    ${media.greaterThan('medium')`
-      margin-top: ${theme.spacings.xlarge};
-    `}
   `}
 `
