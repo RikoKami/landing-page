@@ -128,6 +128,12 @@ export const GET_LANDING_PAGE = gql`
     }
   }
 
+  fragment footer on LandingPage {
+    footer {
+      description
+    }
+  }
+
   query GET_LANDING_PAGE {
     landingPage {
       ...logo
@@ -141,6 +147,7 @@ export const GET_LANDING_PAGE = gql`
       ...sectionAboutUs
       ...sectionReviews
       ...sectionFaq
+      ...footer
     }
   }
 `
